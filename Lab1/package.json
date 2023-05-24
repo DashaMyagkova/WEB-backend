@@ -1,0 +1,71 @@
+{
+  "name": "lab",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "init": "docker-compose up -d && npm i --legacy-peer-deps"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.4.0",
+    "@nestjs/core": "^9.4.0",
+    "@nestjs/jwt": "^10.0.3",
+    "@nestjs/platform-express": "^9.4.0",
+    "@nestjs/swagger": "^6.3.0",
+    "@nestjs/typeorm": "^9.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^5.0.0",
+    "rxjs": "^7.8.1",
+    "typeor": "^1.2.0",
+    "typeorm": "^0.3.15"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.4.2",
+    "@nestjs/schematics": "^9.1.0",
+    "@nestjs/testing": "^9.4.0",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.5",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^26.5.4",
+    "ts-loader": "^8.0.18",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.9.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

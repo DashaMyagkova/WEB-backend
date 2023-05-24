@@ -1,0 +1,11 @@
+version: "3"
+services:
+    postgresql:
+        image: postgres:14.0
+        container_name: lab-postgres
+        environment:
+            POSTGRES_PASSWORD: postgres
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./docker/.postgresql:/var/lib/postgresql/data
