@@ -26,8 +26,8 @@ async function bootstrap() {
     );
 
     const options = new DocumentBuilder()
-        .setTitle("Lab API")
-        .setDescription("This documentation is auto-generated.")
+        .setTitle("Технологія розробки Web-додатків")
+        .setDescription("Розробка серверної частини Web-додатка")
         .setVersion("1.0")
         .addBearerAuth({
             type: 'http',
