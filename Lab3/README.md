@@ -1,0 +1,1 @@
+Мягкова Дарʼя, КВ-22мп. Лабораторна робота 3 "Організація виконання асинхронних задач Web-додатка". Посилання на звіт https://docs.google.com/document/d/1qHplNC_I1AtU_j-hYtbBSmEny5AqDdHEN8IEifEBz1s/edit?usp=sharing
